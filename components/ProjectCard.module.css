@@ -1,0 +1,57 @@
+.container {
+  width: 421px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.info {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.bio,
+.tech,
+.links {
+  margin-top: 10px;
+}
+
+.links {
+  margin-bottom: 10px;
+}
+
+.demo {
+  background-color: var(--colorSecondary);
+}
+
+.demo:hover {
+  background-color: #c43f2b;
+}
+
+.demo,
+.code {
+  padding: 5px 10px;
+  color: var(--backgroundColor);
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.code:hover {
+  background-color: #005943;
+}
+
+.code {
+  background-color: var(--colorSuccess);
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}

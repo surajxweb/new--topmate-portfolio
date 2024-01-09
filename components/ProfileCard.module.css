@@ -1,0 +1,97 @@
+.container {
+  background-color: var(--colorSecondary);
+  color: var(--colorPrimary);
+  padding: 20px 40px;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 30;
+  flex-flow: column nowrap;
+  width: 33%;
+  height: 100vh;
+  overflow: scroll;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.image {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.image img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 3.5px solid var(--colorPrimary);
+}
+
+.name {
+  font-family: someExtraBoldFont;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.bio {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.button {
+  font-family: someExtraBoldFont;
+  margin: 10px 0;
+  border: 1px solid var(--inputBorderColor);
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  gap: 10px;
+}
+
+.button:hover {
+  background-color: #ccc;
+}
+
+/* .container span {
+  color: white;
+} */
+
+/* .container span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+} */
+
+.linkedin,
+.github,
+.instagram,
+.twitter {
+  cursor: pointer;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.github:hover {
+  color: #096c18;
+}
+
+.twitter:hover {
+  color: #0486ff;
+}
+
+.instagram:hover {
+  color: #ff0090;
+}

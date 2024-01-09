@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  background-color: var(--backgroundColor);
+  margin-left: 33%;
+  color: var(--colorPrimary);
+
+  padding: 20px;
+}
+
+.container a {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.selected {
+  background-color: rgba(0, 0, 0, 0.88);
+  color: var(--backgroundColor);
+}
+
+.link {
+  background-color: var(--backgroundColor);
+  color: var(--colorPrimary);
+  border: 1px solid #ccc;
+}
+
+.link:hover {
+  background-color: #ccc;
+}
