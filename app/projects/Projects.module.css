@@ -3,5 +3,10 @@
   display: flex;
   gap: 20px;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 18px;
+  font-family: someBoldFont;
 }

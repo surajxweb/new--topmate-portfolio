@@ -6,6 +6,7 @@ const Page = async () => {
   const projects = await fetchProjects(20);
   return (
     <div className="page">
+        <h2 className={styles.title}>Projects</h2>
       <div className={styles.projectList}>
         {projects?.map((project: any) => (
           <ProjectCard

@@ -1,0 +1,144 @@
+.container {
+  background-color: var(--backgroundColor);
+  color: var(--colorPrimary);
+  font-family: someMediumFont;
+}
+
+.title {
+  font-size: 18px;
+  font-family: someBoldFont;
+}
+
+/* ContactForm.module.css */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+}
+
+.contactForm label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 16px;
+  margin: 8px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid var(--inputBorderColor);
+}
+
+.contactForm textarea {
+  font-family: inherit;
+  resize: none;
+}
+
+.submitButton {
+  margin-top: 10px;
+  font-family: inherit;
+  color: var(--backgroundColor);
+  padding: 10px 30px;
+  background-color: var(--colorSecondary);
+  font-weight: bold;
+  border: none;
+}
+
+.submitButton:hover {
+  background-color: #c43f2b;
+}
+
+.responsemess {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sec2 {
+  background-color: var(--colorSecondary);
+
+  padding: 20px;
+}
+
+.whatsappcont {
+  background-color: var(--colorSecondary);
+
+  width: 55%;
+  color: var(--backgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px auto 20px auto;
+  padding: 30px;
+}
+
+.whatsappcont h4 {
+  font-size: 40px;
+}
+
+.whatsappdes {
+  margin: 20px 0;
+  color: var(--backgroundColor);
+}
+
+.whatsappdes a {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+  .contactForm {
+    max-width: 80%;
+  }
+
+  .whatsappcont {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .whatsappcont h4 {
+    font-size: 30px;
+  }
+
+  .container {
+    border: none;
+  }
+}
+
+/* For screens smaller than 576px (e.g., small smartphones) */
+@media (max-width: 576px) {
+  .contactForm {
+    max-width: 95%;
+    min-height: unset;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 14px;
+  }
+
+  .contactForm button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .whatsappcont h4 {
+    font-size: 24px;
+  }
+
+  .sec2 {
+    padding: 20px;
+  }
+  .whatsappcont {
+    width: 90%;
+    padding: 10px;
+  }
+}

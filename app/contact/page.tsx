@@ -72,20 +72,12 @@ const ContactForm = () => {
 
   return (
     <div className="page">
-      <Head>
-        <title>Contact - Suraj Katyayan: React/Nextjs Developer!</title>
-        <meta
-          name="description"
-          content="Welcome to Suraj X Web Dev. Unleash the Power of Stunning Web Apps!"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className={styles.container}>
-        <h1>Contact Form</h1>
-        <div className={styles.des}>
-          Fill the form and I will get back to you!
-        </div>
+      <h2 className={styles.title}>Contact</h2>
+
+        
         <form className={styles.contactForm} onSubmit={handleSubmit}>
+          
           <label>
             Name:
             <input
@@ -116,9 +108,10 @@ const ContactForm = () => {
               value={formData.message}
               onChange={handleChange}
               required
+              rows={4}
             />
           </label>
-          <button className={styles.ctabutton} type="submit">
+          <button className={styles.submitButton} type="submit">
             Send Message
           </button>
           <div className={styles.responsemess}>
@@ -150,7 +143,7 @@ const ContactForm = () => {
             }
             target="_blank"
           >
-            <BsWhatsapp size="4em" color="#CCCCCC" />
+            <BsWhatsapp size="4em"  />
           </Link>
         </div>
       </div>

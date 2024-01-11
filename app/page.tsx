@@ -61,7 +61,7 @@ export default async function Home() {
       <div className={styles.section}>
         <h2 className={styles.title}>My Skillset</h2>
         <div className={styles.content}>
-          HTML, CSS, JavaScript, TypeScript, Nextjs, React, Redux Toolkit, React
+          HTML, CSS, JavaScript, TypeScript, Nextjs, React, Redux Toolkit, React Testing Library, Jest, React
           Hook Form, Zod Validation, Framer Motion, CSS Modules, Styled
           Components, Tailwind CSS, Shadcn, Redix UI, Material UI, Nodejs,
           MongoDB, GraphQL, Postman and Git Version Control.
@@ -71,7 +71,11 @@ export default async function Home() {
 
       <div className={styles.section}>
         <h2 className={styles.title}>Education</h2>
-        <div className={styles.content}></div>
+        <div className={styles.content}>
+          <div>Masters in Computer Applications</div>
+          <div>Vellore Institute of Technology, Vellore</div>
+          <div>8.64 CGPA</div>
+        </div>
       </div>
 
       <div className={styles.section}>
